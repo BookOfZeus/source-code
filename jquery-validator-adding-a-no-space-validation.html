@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Code</title>
+  <meta charset="UTF-8" />
+  <script type="text/javascript src="//code.jquery.com/jquery-1.10.2.min.js" ></script>
+  <!-- include the jquery validation lib -->
+ </head>
+ <style type="text/css">
+
+ </style>
+<body>
+
+<form action="#" method="post" id="myform">
+<input name="email" id="email" type="text" placeholder="Your Email" />
+<input name="password" id="password" type="password" placeholder="Password" />
+<input type="button" value="submit" class="submit" />
+</form>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  jQuery.validator.addMethod("noSpace", function(value, element) { 
+    return value.indexOf(" ") < 0 && value != ""; 
+  }, "Space are not allowed");
+
+  $("#myform").validate({
+    errorLabelContainer: $("#error"),
+    rules: {
+      password: { required: true, noSpace: true }
+    },
+    messages: {
+      password: { required: 'Please enter your password' }
+    }
+  });
+
+  $('#submit').click(function() {
+    var valid = $("#myform").valid();
+    if(!valid) {
+      return false;
+    }
+    // other code
+  });
+});
+</script>
+</body>
+</html>
