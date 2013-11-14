@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Code</title>
+  <meta charset="UTF-8" />
+ </head>
+ <style type="text/css">
+.stickynotes {
+  position: relative;
+  width: 300px;
+  min-height: 100px;
+  margin: 25px auto;
+  padding: 35px 15px 15px 15px
+  background: #F8EFA2;
+  -webkit-transform: rotate(-.8deg);
+  -moz-transform: rotate(-.8deg);
+  -o-transform: rotate(-.8deg);
+  -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 2px 12px (rgba(0,0,0.5));
+  box-shadow: 0 1px 2px #000;
+}
+
+.stickynotes span {
+  display: block;
+  text-align: center;
+  font: normal 36px Tahoma;
+  color: #000;
+  text-shadow: white 1px 1px 0px;
+  overflow:hidden;
+}
+
+.stickynotes span::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 115px;
+  top: -15px;
+  width: 75px;
+  height: 25px;
+  z-index: 2;
+  background: rgba(245,245,245,0.5);
+  border: 2px solid rgba(255,255,255,0.5);
+  -webkit-box-shadow: 0 0 5px #888;
+  -moz-box-shadow: 0 0 5px #888;
+  box-shadow: 2px 2px 2px #000;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+}
+ </style>
+<body>
+
+<div class="stickynotes"><span>Call Mom!</span></div>
+
+</body>
+</html>
