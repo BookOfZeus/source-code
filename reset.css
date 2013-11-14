@@ -1,0 +1,92 @@
+::-moz-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-focus-inner, :focus {
+  outline: none;
+}
+* {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  font: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  vertical-align: baseline;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a img {
+	border: none;
+}
+/* HTML5 new elements for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+}
+body, html {
+  height: 100%;
+}
+caption, th {
+	text-align: left;
+}
+del {
+    text-decoration: line-through;
+}
+fieldset {
+	border: 0;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+img { 
+  border: 0;
+}
+img::-moz-selection, img::selection {
+  background: transparent;
+}
+input, select, textarea {
+  border: solid 1px #aaa;
+  margin: 3px;
+  padding: 2px;
+}
+kbd {
+  background: #eee;
+  border-color: #ccc #aaa #888 #bbb;
+  border-style: solid;
+  border-width: 1px 3px 3px 1px;
+  color: #000;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+mark {
+    background: #ff0;
+    color: #000; 
+    font-style: italic;
+    font-weight: bold;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
