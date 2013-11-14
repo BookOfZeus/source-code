@@ -1,0 +1,15 @@
+::-webkit-input-placeholder {
+  color: #908681;
+  font-size: 10px;
+  text-transform:uppercase;
+}
+input:-moz-placeholder {
+  color: #908681;
+  font-size: 10px;
+  text-transform:uppercase;
+}
+:-ms-input-placeholder {
+  color: #908681;
+  font-size: 10px;
+  text-transform:uppercase;
+}
